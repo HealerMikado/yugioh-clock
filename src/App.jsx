@@ -1,4 +1,5 @@
 import React, { useState, useRef  } from "react";
+import audioFile from './assets/duel.mp3';
 
 import "./App.css";
 function App() {
@@ -34,7 +35,7 @@ function App() {
       ⏲️
       </button>
      {/* Audio element */}
-     <audio ref={audioRef} src="/duel.mp3" />
+     <audio ref={audioRef} src={audioFile}  />
     </div>
 
     <div className="box" style={{ top: "30%" }}>
