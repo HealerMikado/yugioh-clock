@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffffff, #a9a9a9);
+  font: 1em verdana, sans-serif;
+}
+.stage {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+}
+
+.box {
+  position: relative; /* Allow margin to push the element vertically */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  padding: 20px;
+  text-align: center;
+}
+
+.centered {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 100vh;          /* Full viewport height */
+}
+.phrase {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+[id='clock'] {
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.play-button{
+  background-color: transparent;
+  border: none;
+  font-size: 6rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.play-button:hover {
+  text-decoration: none;
+}
+
+.play-button:focus {
+  outline-offset: 2px;
+}
